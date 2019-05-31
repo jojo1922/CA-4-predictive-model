@@ -116,11 +116,11 @@ qqnorm(auto_arima_nat$residuals)# fitting model
 qqline(auto_arima_nat$residuals)
 
 
-Box.test(auto_arima_nat$residuals, type ="Ljung-Box" )# p> .05 fits for the model
+Box.test(auto_arima_nat$residuals, type ="Ljung-Box" )# p > .05 fits for the model
 
 
 plot(forecast(auto_arima_nat,12),plot(forecast(arima_model_natural,10), xlab = "year"
-                              , ylab = "Co2 emisson natural gas"))
+                              , ylab = "Co2 emisson natural gas"))# shows the forcast value for next year along with month values
 
 
 
